@@ -1,0 +1,28 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "type": "income",
+      "amount": 2500,
+      "category": "Salary"
+    },
+    {
+      "id": 2,
+      "type": "expense",
+      "amount": 100,
+      "category": "Groceries"
+    },
+    {
+      "id": 3,
+      "type": "expense",
+      "amount": 50,
+      "category": "Eating Out"
+    },
+    {
+      "id": 4,
+      "type": "income",
+      "amount": 150,
+      "category": "Freelance Work"
+    }
+  ]
+}
