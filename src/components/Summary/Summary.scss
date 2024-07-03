@@ -1,0 +1,33 @@
+// Summary.scss
+
+.summary {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .summary-item {
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #ffffff;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+      strong {
+        margin-right: 10px;
+      }
+  
+      span {
+        font-weight: bold;
+        color: #007bff; // Adjust color as per your design
+      }
+    }
+  }
+  

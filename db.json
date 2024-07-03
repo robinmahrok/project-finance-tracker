@@ -2,27 +2,59 @@
   "transactions": [
     {
       "id": 1,
-      "type": "income",
-      "amount": 2500,
-      "category": "Salary"
+      "title": "Salary",
+      "amount": 5000,
+      "category": "Income",
+      "date": "2024-07-01",
+      "isIncome": true
     },
     {
       "id": 2,
-      "type": "expense",
-      "amount": 100,
-      "category": "Groceries"
+      "title": "Rent",
+      "amount": 1200,
+      "category": "Housing",
+      "date": "2024-07-02",
+      "isIncome":false
     },
     {
       "id": 3,
-      "type": "expense",
-      "amount": 50,
-      "category": "Eating Out"
+      "title": "Groceries",
+      "amount": 300,
+      "category": "Food",
+      "date": "2024-07-03",
+      "isIncome":false
     },
     {
       "id": 4,
-      "type": "income",
-      "amount": 150,
-      "category": "Freelance Work"
+      "title": "Internet Bill",
+      "amount": 50,
+      "category": "Utilities",
+      "date": "2024-07-04",
+      "isIncome":false
+    },
+    {
+      "id": 5,
+      "title": "Bonus",
+      "amount": 1000,
+      "category": "Income",
+      "date": "2024-07-05",
+      "isIncome":true
+    },
+    {
+      "id": 6,
+      "title": "Dinner",
+      "amount": 60,
+      "category": "Food",
+      "date": "2024-07-06",
+      "isIncome":false
+    },
+    {
+      "id": 7,
+      "title": "Gym Membership",
+      "amount": 80,
+      "category": "Fitness",
+      "date": "2024-07-07",
+      "isIncome":false
     }
   ]
 }
