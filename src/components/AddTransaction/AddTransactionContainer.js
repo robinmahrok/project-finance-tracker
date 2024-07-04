@@ -16,7 +16,7 @@ function AddTransactionContainer(props) {
     let newData = [...previousTransactions, {
       "id": id,
       "title": newTransaction?.title,
-      "amount": newTransaction?.amount,
+      "amount": parseInt(newTransaction?.amount),
       "category": newTransaction?.category,
       "date": newTransaction?.date,
       "isIncome": newTransaction?.type == "Income" ? true : false 

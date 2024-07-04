@@ -26,9 +26,9 @@ function SummaryContainer(props) {
     let expenses = 0;
     allTransactions.forEach(transaction => {
       if (transaction?.isIncome) {
-        income += transaction.amount;
+        income += parseInt(transaction.amount);
       } else {
-        expenses += transaction.amount;
+        expenses += parseInt(transaction.amount);
       }
     });
 
