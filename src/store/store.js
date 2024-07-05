@@ -1,5 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit'
 import folderDataReducer from './slice/folderDataSlice'
+import screenStateReducer from './slice/screenStateSlice';
 import { combineReducers } from 'redux';
 import storage from 'redux-persist/lib/storage';
 import {
@@ -15,7 +16,8 @@ import {
 
 
 const rootReducers = combineReducers({
-    folderDataSlice : folderDataReducer
+    folderDataSlice : folderDataReducer,
+    screenStateSlice: screenStateReducer
 })
 
 const persistConfig = {

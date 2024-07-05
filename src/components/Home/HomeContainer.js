@@ -11,6 +11,10 @@ function HomeContainer(props) {
   const dispatch = useDispatch();
   useEffect(() => {
     setShowSpinner(true)
+    getListOfExpenses();
+  }, [])
+
+  const getListOfExpenses = () => {
     getExpenseList().then((response) => {
       setShowSpinner(false);
       if (response) {
@@ -18,12 +22,7 @@ function HomeContainer(props) {
       } else {
         alert("some error occured");
       }
-    })
-  }, [])
-
-
-  const actionHandler = () => {
-
+    });
   }
 
   return <>
@@ -31,7 +30,7 @@ function HomeContainer(props) {
       <PushSpinner size={30} color="#007bff"
         loading={showSpinner} />
     </div> :
-      <HomeUI actionHandler={actionHandler} />}
+      <HomeUI />}
   </>;
 }
 

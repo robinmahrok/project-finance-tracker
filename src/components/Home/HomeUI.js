@@ -1,13 +1,19 @@
 import React from "react";
-import CategoryBreakdownContainer from "../CategoryBreakdown/CategoryBreakdownContainer";
-import TransactionListContainer from "../TransactionList/TransactionListContainer";
 
 function HomeUI(props) {
 
   return (
     <>
-    <TransactionListContainer />
-    <CategoryBreakdownContainer />
+      <div>
+        <h1>Home</h1>
+        <div> <span>Hi,</span>
+          <br />
+          <p>
+            Please visit the above tabs to check functionalities. Data is already fetched during this page load.
+          </p>
+        </div>
+      </div>
+
     </>
   );
 }

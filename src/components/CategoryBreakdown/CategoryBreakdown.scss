@@ -11,8 +11,6 @@
         margin-bottom: 20px;
     }
 
-    // Summary.scss
-
     .summary {
         max-width: 400px;
         margin: 20px auto;
@@ -40,10 +38,12 @@
             span {
                 font-weight: bold;
             }
-            .green{
+
+            .green {
                 color: green;
             }
-            .red{
+
+            .red {
                 color: red;
             }
         }
