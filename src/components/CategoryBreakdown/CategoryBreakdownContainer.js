@@ -1,9 +1,7 @@
 
 import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { setUpdatedFolderData } from "../../store/slice/folderDataSlice";
+import { useSelector } from "react-redux";
 import CategoryBreakdownUI from "./CategoryBreakdownUI";
-import getExpenseList from '../../core/services/getExpenseList';
 
 function CategoryBreakdownContainer(props) {
 
@@ -14,7 +12,6 @@ function CategoryBreakdownContainer(props) {
    if(Object.keys(folderData).length){
     let allTransactions = Object.values(folderData);
     let categoryExpenses = calculateCategoryExpenses(allTransactions);
-    console.log(categoryExpenses,'00000000000000');
     setData(categoryExpenses);
    }
   },[folderData])

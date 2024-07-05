@@ -4,7 +4,7 @@ import './TransactionList.scss'
 function TransactionListUI(props) {
 
   const { transactions } = props;
-  console.log(transactions);
+
   return (
     <>
     <div className="transaction-list">

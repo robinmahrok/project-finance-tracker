@@ -19,7 +19,7 @@ function AddTransactionContainer(props) {
       "amount": parseInt(newTransaction?.amount),
       "category": newTransaction?.category,
       "date": newTransaction?.date,
-      "isIncome": newTransaction?.type == "Income" ? true : false 
+      "isIncome": newTransaction?.type === "Income" ? true : false 
     }];
     dispatch(setUpdatedFolderData({...newData}));
   }

@@ -1,33 +1,57 @@
-// Summary.scss
-
 .summary {
-    max-width: 400px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  
-    h2 {
-      text-align: center;
-      margin-bottom: 20px;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .summary-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    strong {
+      margin-right: 10px;
     }
-  
-    .summary-item {
-      margin-bottom: 10px;
-      padding: 10px;
-      background-color: #ffffff;
-      border-radius: 4px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  
-      strong {
-        margin-right: 10px;
-      }
-  
-      span {
-        font-weight: bold;
-        color: #007bff; // Adjust color as per your design
-      }
+
+    span {
+      font-weight: bold;
+      color: #007bff; // Adjust color as per your design
     }
   }
-  
+}
+
+@media only screen and (max-width: 992px) {
+  .summary {
+    max-width: 300px;
+    padding: 10px;
+  }
+
+  .summary-item {
+    padding: 6px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .summary {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .summary-item {
+    padding: 5px;
+  }
+}

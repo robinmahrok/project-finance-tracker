@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
+import React from "react";
+import CategoryBreakdownContainer from "../CategoryBreakdown/CategoryBreakdownContainer";
+import TransactionListContainer from "../TransactionList/TransactionListContainer";
 
 function HomeUI(props) {
 
   return (
     <>
-    
+    <TransactionListContainer />
+    <CategoryBreakdownContainer />
     </>
   );
 }

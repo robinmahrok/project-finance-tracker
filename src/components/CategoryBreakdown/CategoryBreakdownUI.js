@@ -1,15 +1,11 @@
-import React, { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
+import React from "react";
 import { PieChart, Pie, Cell, Tooltip, Legend } from 'recharts';
 import './CategoryBreakdown.scss'; // Import SCSS file for styling
 
 function CategoryBreakdownUI(props) {
   const {data} = props;
-  console.log(data);
   const {totalIncome, totalExpenses, categoryData} = data
   const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "#3cba9f", "#e8c3b9", "#c45850", "#f58231", "#4b7bec", "#10ac84"];
-
-
 
   return (
     <>
