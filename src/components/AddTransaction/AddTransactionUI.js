@@ -55,14 +55,20 @@ function AddTransactionUI(props) {
             />
           </div>
           <div className="form-control">
-            <label>Category</label>
-            <input
-              type="text"
+          <label>Category</label>
+            <select
               value={category}
               onChange={(e) => setCategory(e.target.value)}
-              placeholder="Enter category"
               required
-            />
+            >
+              <option value="" disabled>Please select one</option>
+              <option value="Income">Income</option>
+              <option value="Housing">Housing</option>
+              <option value="Food">Food</option>
+              <option value="Utilities">Utilities</option>
+              <option value="Fitness">Fitness</option>
+              <option value="Other">Others</option>
+            </select>
           </div>
           <div className="form-control">
             <label>Date</label>

@@ -5,7 +5,7 @@ import './CategoryBreakdown.scss'; // Import SCSS file for styling
 function CategoryBreakdownUI(props) {
   const {data} = props;
   const {totalIncome, totalExpenses, categoryData} = data
-  const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "#3cba9f", "#e8c3b9", "#c45850", "#f58231", "#4b7bec", "#10ac84"];
+  const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "#e8c3b9", "#c45850", "#f58231", "#4b7bec", "#10ac84"];
 
   return (
     <>
